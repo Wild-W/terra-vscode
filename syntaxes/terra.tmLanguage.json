@@ -1,0 +1,24 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Terra",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "source.lua"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.terra",
+				"match": "\\b(terra)\\b"
+			}]
+		}
+	},
+	"scopeName": "source.terra"
+}
