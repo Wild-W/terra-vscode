@@ -1,6 +1,6 @@
 {
   "name": "terra-lua",
-  "displayName": "Terra",
+  "displayName": "Terra-Lua",
   "description": "Basic Terra syntax support",
   "version": "0.0.1",
   "engines": {
