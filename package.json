@@ -1,14 +1,28 @@
 {
-  "name": "terra",
-  "displayName": "terra",
-  "description": "Basic terra syntax support",
+  "name": "terra-lua",
+  "displayName": "Terra",
+  "description": "Basic Terra syntax support",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.93.0"
   },
+  "publisher": "WildW",
   "categories": [
     "Programming Languages"
   ],
+  "icon": "./icon.png",
+  "author": {
+    "email": "connor.bren@gmail.com",
+    "name": "Connor Bren",
+    "url": "https://github.com/Wild-W"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Wild-W/terra-vscode"
+  },
+  "bugs": {
+    "url": "https://github.com/Wild-W/terra-vscode/issues"
+  },
   "contributes": {
     "languages": [{
       "id": "terra",
