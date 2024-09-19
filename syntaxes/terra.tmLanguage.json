@@ -17,7 +17,7 @@
 			"patterns": [
 				{
 					"name": "keyword.control.terra",
-					"match": "\\b(terra|var|switch|case|defer|struct|quote|macro|escape)\\b"
+					"match": "\\b(terra|var|switch|case|defer|struct|quote|escape)\\b"
 				},
 				{
 					"name": "keyword.operator.terra",
