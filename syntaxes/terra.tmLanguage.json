@@ -3,25 +3,32 @@
 	"name": "Terra",
 	"patterns": [
 		{
-			"include": "#keywords"
-		},
-		{
-			"include": "#strings"
+			"include": "#terraBlock"
 		},
 		{
 			"include": "source.lua"
 		}
 	],
 	"repository": {
-		"keywords": {
+		"terraBlock": {
 			"patterns": [
 				{
-					"name": "keyword.control.terra",
-					"match": "\\b(terra|var|switch|case|defer|struct|quote|macro|escape)\\b"
-				},
-				{
-					"name": "keyword.operator.terra",
-					"match": "`"
+					"begin": "\\b(terra|quote)\\b",
+					"beginCaptures": {
+						"1": {
+							"name": "keyword.control.terra"
+						},
+						"2": {
+							"name": "keyword.operator.terra"
+						}
+					},
+					"end": "(?=\\bend\\b)",
+					"patterns": [
+						{
+							"name": "keyword.control.terra",
+							"match": "\\b(terra|if|else|elseif|repeat|for|until|end|while|break|in|return|then|do|var|switch|case|defer|struct|escape)\\b"
+						}
+					]
 				}
 			]
 		}
